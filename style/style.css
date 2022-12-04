@@ -620,6 +620,60 @@ body {
 	display: block;
 }
 
+.pricing-options_wrap-flex {
+	display: flex;
+	justify-content: space-between;
+	font-family: "Open Sans";
+	font-style: normal;
+	padding: 0 10px;
+	padding-top: calc(59 / 1170 * 100%);
+}
+
+.pricing-options_wrap-inner {
+	width: 30%;
+}
+
+.pricing-options_wrap-inner li {
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	color: #86878b;
+}
+
+.pricing-options_wrap-inner li:nth-child(2) {
+	height: 100px;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+}
+.pricing-options_wrap-flex ul:first-child,
+.pricing-options_wrap-flex ul:last-child {
+	padding-top: calc(20 / 1170 * 100%);
+}
+
+.pricing-options_wrap-inner li:nth-child(1) {
+	height: 60px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 33px;
+	color: #ffffff;
+}
+.pricing-options_wrap-inner li:nth-child(1),
+.pricing-options_wrap-inner li:nth-child(2),
+.pricing-options_wrap-inner li:nth-child(3) {
+	background-color: #333333;
+	border: 2px solid #f5f5f5;
+}
+
+.pricing-options_wrap-inner li:nth-child(3) {
+	color: rgba(255, 255, 255, 0.5);
+}
+
 @media (max-width: 1024px) {
 	.main_container-inner {
 		width: 55%;
@@ -782,6 +836,14 @@ body {
 		padding-top: 20px;
 		justify-content: center;
 	}
+
+	.pricing-options_wrap-flex {
+		flex-direction: column;
+		align-items: center;
+	}
+	.pricing-options_wrap-inner {
+		width: 80%;
+	}
 }
 
 @media (max-width: 320px) {
@@ -833,6 +895,20 @@ body {
 	.title__content {
 		font-size: 18px;
 	}
+
+	.pricing-options_wrap-inner li {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.pricing-options_wrap-inner li:nth-child(1) {
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.pricing-options_wrap-inner li:nth-child(2) {
+		font-size: 24px;
+		line-height: 28px;
+	}
 }
 
 @media (max-width: 1072px) {
@@ -862,5 +938,8 @@ body {
 @media (max-width: 400px) {
 	.tabs_title {
 		height: 71px;
+	}
+	.pricing-options_wrap-inner {
+		width: 100%;
 	}
 }
