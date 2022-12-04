@@ -369,13 +369,18 @@ body {
 	background-color: #ec7979;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
+	color: #ffffff;
+	margin-top: 75px;
+}
+
+.main__form a {
 	font-family: "Open Sans";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 15px;
 	line-height: 20px;
 	color: #ffffff;
-	margin-top: 75px;
+	text-decoration: none;
 }
 
 .main_container-flex-wrap {
@@ -567,9 +572,16 @@ body {
 	.footer_container-flex .footer_container-inner:last-child {
 		width: calc(100% - (402 + 20) / 1170 * 100%);
 	}
+	.footer_container-flex {
+		padding-bottom: 20px;
+	}
 }
 
-@media (max-width: 760px) {
+@media (max-width: 765px) {
+	.footer_container-flex {
+		padding-bottom: 20px;
+	}
+
 	.main_container-inner {
 		width: 100%;
 		padding: 0;
