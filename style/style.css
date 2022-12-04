@@ -565,7 +565,7 @@ body {
 	height: 124px;
 	color: #000000;
 	text-align: center;
-	background: url(/style/img/Underline_title.png) no-repeat bottom;
+	background: url(./img/Underline_title.png) no-repeat bottom;
 }
 
 .title__content-sup {
